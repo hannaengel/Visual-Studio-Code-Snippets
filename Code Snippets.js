@@ -33,5 +33,26 @@
         "description": "react template for initializing state"
 	}
 
+	"fetch": {
+        "prefix": "fetch",
+        "body": [
+			"fetch('${1:URL HERE')",
+			"	.then(res=>res.json())",
+			"	.then(data => console.log(data));"
+        ],
+        "description": "fetch GET"
+	}
+
+
+	"handleClick": {
+        "prefix": "handleClick",
+        "body": [
+			"handleClick = event => {",
+			"	console.log(event)",
+			"}"
+        ],
+        "description": "handleClick function with event access"
+	}
+
 }
 
