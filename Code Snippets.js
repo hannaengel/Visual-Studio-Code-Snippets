@@ -54,5 +54,34 @@
         "description": "handleClick function with event access"
 	}
 
+
+
+	  "handleMapArrayForElements": {
+        "prefix": "map props",
+        "body": [
+			"{this.props.${1:INSERT PROP ARRAY HERE}.map((${2:INSERT SINGLE INSTANCE HERE}, index) => {",
+			"	return <${3:COMPONENT HERE} key={index} ${4:NAME THE PROP}={${5: INSERT SINGLE INSTANCE HERE}}/>",
+			" })}"
+        ],
+        "description": "pass down array of instances to single component one at a time"
+	}
+
+	"functionalComponent": {
+        "prefix": "functional component",
+        "body": [
+			"import React from 'react'",
+			"",
+			"const ${1:INSERT FUNCTION NAME} = props => {",
+			"	return (",
+			"		<div>{props.${2:INSERT PROP VAL HERE}}</div>",
+			"	)",
+			"}",
+			"",
+			"export default ${3:INSERT FUNCTION NAME}"
+		
+        ],
+        "description": "react component template"
+    }
+
 }
 
